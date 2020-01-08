@@ -1,8 +1,11 @@
 // 문자 target
-var _target = document.body.querySelector('p');
-var _txt = _target.innerHTML;
+var _txt = "Hello, world! Hello2, world! Hello";
 
+// 정규식 패턴
 var regExp = /Hello$/;
-var result = regExp.exec(_txt);
+var result = _txt.replace(regExp, '<span style=\"color: red;\">추출</span>');
 
-console.log('', result);
+// Html View
+document.querySelector('.js-origin-txt').innerHTML = _txt;
+document.querySelector('.js-reg-exp').innerHTML = regExp;
+document.querySelector('.js-export-txt').innerHTML = result;
