@@ -1,8 +1,8 @@
 // 문자 target
-var _txt = "Monday Tuesday Friday";
+var _txt = "-@@@- * ** - - \"*\" -- * ** -@@@-";
 
 // 정규식 패턴
-var regExp = /..(id|esd|nd)ay/;
+var regExp = /[^ ]+/;
 var result = _txt.replace(regExp, '<span style=\"color: red;\">추출</span>');
 
 // Html View
