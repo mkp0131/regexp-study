@@ -121,5 +121,7 @@
 ## \w+(?=X) 해당 단어의 문자가 1 ~ 여러개 이고, X 라는 알파벳이 나오기 전까지 선택
 1. **AAA**X---aaax---111
 
+## AAA(?!X) AAA라는 단어 다음으로 X가 없는 AAA를 선택
+
 참고
 > 공부사이트: http://zvon.org/comp/r/tut-Regexp.html
