@@ -1,8 +1,8 @@
 // 문자 target
-var _txt = "<div>test</div><div>test2</div>";
+var _txt = "cat cat";
 
 // 정규식 패턴
-var regExp = /<div>.+?<\/div>/;
+var regExp = /..\b/;
 var result = _txt.replace(regExp, '<span style=\"color: red;\">추출</span>');
 
 // Html View
